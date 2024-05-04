@@ -39,7 +39,6 @@ main {
 
 .container__cols {
   display: flex;
-  grid-template-columns: repeat(2, 1fr);
   /* gap: 2rem; */
 }
 
@@ -91,4 +90,31 @@ form {
 
 .form__submitButton:hover {
   background-color: var(--primary-tomato);
+}
+
+@media (width < 50rem) {
+  .container {
+    min-height: 100vh;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .container__cols {
+    flex-direction: column-reverse;
+  }
+
+  .form__imageSection {
+    width: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+
+  .form__textSection {
+    padding: 2rem;
+  }
+
+  .right__image {
+    min-width: 100%;
+  }
 }
