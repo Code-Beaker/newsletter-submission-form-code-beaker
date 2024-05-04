@@ -66,11 +66,17 @@ form {
   font-family: var(--font-regular);
   font-size: 1.0525rem;
   padding: 0.75rem;
+  border: 1px solid var(--neutral-charcoal-grey);
+  border-radius: 0.25rem;
   margin: 1rem 0;
 }
 
+.form__emailInput:focus {
+  outline: 1px solid var(--neutral-dark-slate-grey);
+}
+
 .form__submitButton {
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 1.5rem;
   display: block;
   width: 100%;
   font-size: 1.0525rem;
@@ -78,5 +84,11 @@ form {
   font-family: var(--font-bold);
   border-radius: 0.5rem;
   color: var(--neutral-white);
+  cursor: pointer;
+  transition: 100ms ease-in-out;
   background-color: var(--neutral-dark-slate-grey);
+}
+
+.form__submitButton:hover {
+  background-color: var(--primary-tomato);
 }
