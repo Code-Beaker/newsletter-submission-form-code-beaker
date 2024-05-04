@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="container__cols">
+          <section class="form__textSection">
+            <h1 class="form__title">Stay updated!</h1>
+            <p class="form__text">
+              Join 60,000+ product managers receiving monthly updates on:
+            </p>
+            <ul class="form__list">
+              <li class="form__list-item">
+                Product discovery and building what matters
+              </li>
+              <li class="form__list-item">
+                Measuring to ensure updates are a success
+              </li>
+              <li class="form__list-item">And much more!</li>
+            </ul>
+            <form action="index.html">
+              <label for="emailInput">Email address</label>
+              <input
+                class="form__emailInput"
+                type="email"
+                placeholder="email@company.com"
+                name="email"
+                id="emailInput"
+              />
+              <button class="form__submitButton" id="submitBtn" type="submit">
+                Subscribe to monthly newsletter
+              </button>
+            </form>
+          </section>
+          <section class="form__imageSection">
+            <picture>
+              <source
+                media="(min-width: 50rem)"
+                srcset="assets/images/illustration-sign-up-desktop.svg"
+              />
+              <img
+                class="right__image"
+                src="assets/images/illustration-sign-up-mobile.svg"
+                alt="illustration"
+              />
+            </picture>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

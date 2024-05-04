@@ -1,0 +1,27 @@
+/* Roboto Import */
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("../assets/fonts/Roboto-Regular.woff") format("woff"),
+    url("../assets/fonts/Roboto-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "RobotoBold";
+  src: url("../assets/fonts/Roboto-Bold.woff") format("woff"),
+    url("../assets/fonts/Roboto-Bold.woff2") format("woff2");
+}
+
+:root {
+  --font-regular: "RobotoRegular", sans-serif;
+  --font-bold: "RobotoBold", sans-serif;
+
+  --weight-regular: 400;
+  --weight-bold: 700;
+
+  --primary-tomato: hsl(4, 100%, 67%);
+
+  --neutral-dark-slate-grey: hsl(234, 29%, 20%);
+  --neutral-charcoal-grey: hsl(235, 18%, 26%);
+  --neutral-grey: hsl(231, 7%, 60%);
+  --neutral-white: hsl(0, 0%, 100%);
+}
