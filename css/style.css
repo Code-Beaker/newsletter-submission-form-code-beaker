@@ -18,6 +18,7 @@ main {
   padding: 2rem;
   border-radius: 2rem;
   max-width: 52.5rem;
+  display: none;
 }
 
 .form__textSection {
@@ -74,7 +75,8 @@ form {
   outline: 1px solid var(--neutral-dark-slate-grey);
 }
 
-.form__submitButton {
+.form__submitButton,
+.dismissButton {
   padding: 1rem 1.5rem;
   display: block;
   width: 100%;
@@ -82,13 +84,15 @@ form {
   border: none;
   font-family: var(--font-bold);
   border-radius: 0.5rem;
+  margin: 1rem 0;
   color: var(--neutral-white);
   cursor: pointer;
   transition: 100ms ease-in-out;
   background-color: var(--neutral-dark-slate-grey);
 }
 
-.form__submitButton:hover {
+.form__submitButton:hover,
+.dismissButton:hover {
   background-color: var(--primary-tomato);
 }
 
@@ -117,4 +121,24 @@ form {
   .right__image {
     min-width: 100%;
   }
+}
+
+/* modal */
+.modal {
+  background-color: var(--neutral-white);
+  padding: 2rem;
+  border-radius: 2rem;
+  max-width: 25rem;
+}
+
+.modal__checkmark {
+  display: block;
+  margin-block: 1rem;
+}
+
+.modal__heading {
+  font-family: var(--font-bold);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--neutral-dark-slate-grey);
 }
