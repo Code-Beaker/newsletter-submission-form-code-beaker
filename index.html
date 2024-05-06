@@ -17,7 +17,7 @@
   <body>
     <main>
       <div class="container">
-        <div class="container__cols">
+        <div id="formContainer" class="container__cols">
           <section class="form__textSection">
             <h1 class="form__title">Stay updated!</h1>
             <p class="form__text">
@@ -32,8 +32,11 @@
               </li>
               <li class="form__list-item">And much more!</li>
             </ul>
-            <form action="index.html">
-              <label for="emailInput">Email address</label>
+            <form id="form" action="index.html" novalidate>
+              <div class="email__label-and-status">
+                <label for="emailInput">Email address</label>
+                <p class="emailStatus" id="emailStatusText"></p>
+              </div>
               <input
                 class="form__emailInput"
                 type="email"
@@ -62,7 +65,7 @@
         </div>
       </div>
       <!-- modal -->
-      <div class="modal">
+      <div id="modal" class="modal">
         <img
           src="assets/images/icon-success.svg"
           alt=""
@@ -77,5 +80,8 @@
         <button id="dismissBtn" class="dismissButton">Dismiss message</button>
       </div>
     </main>
+    <script src="app.js"></script>
+    <!-- Validator -->
+    <script src="https://unpkg.com/validator@latest/validator.min.js"></script>
   </body>
 </html>

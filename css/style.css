@@ -16,9 +16,19 @@ main {
 .container {
   background-color: var(--neutral-white);
   padding: 2rem;
+  display: flex;
   border-radius: 2rem;
   max-width: 52.5rem;
+  /* display: none; */
+}
+
+.form-hide {
   display: none;
+  /* scale: 0; */
+}
+
+.form-show {
+  display: block;
 }
 
 .form__textSection {
@@ -36,6 +46,16 @@ main {
 
 .form__text {
   margin-bottom: 1rem;
+}
+
+.email__label-and-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-error {
+  color: var(--primary-tomato);
 }
 
 .container__cols {
@@ -69,6 +89,15 @@ form {
   border: 1px solid var(--neutral-charcoal-grey);
   border-radius: 0.25rem;
   margin: 1rem 0;
+}
+
+/* user email address */
+#emailAddressText {
+  font-family: var(--font-bold);
+}
+
+.form__emailInput-error {
+  border-color: var(--primary-tomato);
 }
 
 .form__emailInput:focus {
@@ -127,6 +156,7 @@ form {
 .modal {
   background-color: var(--neutral-white);
   padding: 2rem;
+  display: none;
   border-radius: 2rem;
   max-width: 25rem;
 }
@@ -141,4 +171,8 @@ form {
   font-size: 2rem;
   margin-bottom: 1rem;
   color: var(--neutral-dark-slate-grey);
+}
+
+.modal-show {
+  display: block;
 }
