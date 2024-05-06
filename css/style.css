@@ -126,14 +126,22 @@ form {
 }
 
 @media (width < 50rem) {
+  main {
+    min-width: 100%;
+  }
+
   .container {
     min-height: 100vh;
     border-radius: 0;
     padding: 0;
+    width: 100%;
   }
 
   .container__cols {
+    width: 100%;
     flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .form__imageSection {
@@ -143,12 +151,13 @@ form {
     align-items: center; */
     position: static;
     top: 0;
+    padding: 0;
     left: 0;
   }
 
-  .form__textSection {
-    padding: 2rem;
-  }
+  /* .form__textSection {
+    padding: 1rem;
+  } */
 
   .right__image {
     min-width: 100%;
